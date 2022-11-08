@@ -1,0 +1,54 @@
+<!--
+    Dan Balboni
+    CPSC 332 Web Development
+    HW5
+    Last Modified: 11/7/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout Game</title>
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link to script file -->
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="end-screen" hidden>
+            <h1 id="end-text"></h1>
+            <button id="continue">Continue</button>
+        </div>
+        <div id="title-screen" hidden>
+            <h1 id="title">GAME TITLE</h1>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="pause-overlay" hidden>
+            <h1>PAUSED</h1>
+        </div>
+        <div id="Game">
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+        </div>
+
+        <div id="options">
+            <div id="speed">
+                <div id="speed-text">
+                    <h3>Game Speed: </h3>
+                    <h2 id="game-speed"> 2</h2>
+                </div>
+                <div class="slidecontainer" id="slider-container">
+                    <input type="range" min="0.05" max="4" value="2" step="0.05" class="slider" id="speed-slider">
+                </div>
+            </div>
+            <button id="reset" hidden>RESET GAME</button>
+            <button id="pause" hidden>Toggle Pause</button>
+        </div>
+    </div>
+</body>
+
+</html>
